@@ -1,0 +1,8 @@
+{
+	"require": {
+		"cboden/Ratchet": "0.2.*"
+	},
+	"autoload": {
+		"psr-0": { "t2t2\\WebRTC_test\\": "src" }
+	}
+}

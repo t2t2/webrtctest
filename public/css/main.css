@@ -1,0 +1,191 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	height: 100%;
+}
+
+#actions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	width: 100%;
+	padding: 5px 10px;
+}
+#videos {
+	position: absolute;
+	top: 40px;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+
+	background: #aaa;
+}
+.video {
+	max-height: 100%;
+}
+#chat-wrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	width: 100%;
+	height: 200px;
+
+	background: #ccc;
+	padding: 5px 10px;
+}
+#chat-wrapper>div {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+#chat-wrapper>div>div {
+	height: 100%;
+}
+#chat {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 34px;
+	width: 100%;
+	overflow-y: scroll;
+}
+#chat-input-bar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+#userlist {
+	overflow-y: scroll;
+	height: 100%;
+	margin-bottom: 0;
+}
+#userlist:before {
+	content: "Connected users:";
+	color: #666666;
+}
+
+
+
+/* toastr */
+.toast-title {
+	font-weight: bold;
+}
+.toast-message {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.toast-message a,
+.toast-message label {
+	color: #ffffff;
+}
+.toast-message a:hover {
+	color: #cccccc;
+	text-decoration: none;
+}
+.toast-top-full-width {
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+.toast-bottom-full-width {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+.toast-top-left {
+	top: 12px;
+	left: 12px;
+}
+.toast-top-right {
+	top: 12px;
+	right: 12px;
+}
+.toast-bottom-right {
+	right: 12px;
+	bottom: 12px;
+}
+.toast-bottom-left {
+	bottom: 12px;
+	left: 12px;
+}
+#toast-container {
+	position: fixed;
+	z-index: 999999;
+}
+#toast-container * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#toast-container > div {
+	margin: 0 0 1px;
+	padding: 5px 10px 5px 5px;
+	width: 300px;
+	-moz-box-shadow: 0 0 12px #999999;
+	-webkit-box-shadow: 0 0 12px #999999;
+	box-shadow: 0 0 12px #999999;
+	color: #ffffff;
+/*	opacity: 0.8;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	filter: alpha(opacity=80); */
+	text-shadow: 1px 1px 1px #000000;
+}
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+	width: 96%;
+	margin: auto;
+}
+.toast {
+	border-left: 4px solid #030303;
+	background: #474747;
+}
+.toast-success {
+	border-left: 4px solid #51a351;
+	background: #7BA07B;
+}
+.toast-error {
+	border-left: 4px solid #bd362f;
+	background: #BC706D;
+}
+.toast-info {
+	border-left: 4px solid #2f96b4;
+	background: #74A3AF;
+}
+.toast-warning {
+	border-left: 4px solid #f89406;
+	background: #F7C785;
+}
+/*Responsive Design*/
+@media all and (max-width: 240px) {
+	#toast-container > div {
+		padding: 8px;
+		width: 108px;
+	}
+}
+@media all and (min-width: 241px) and (max-width: 320px) {
+	#toast-container > div {
+		padding: 8px;
+		width: 128px;
+	}
+}
+@media all and (min-width: 321px) and (max-width: 480px) {
+	#toast-container > div {
+		padding: 8px;
+		width: 192px;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	#toast-container > div {
+		padding: 15px;
+		width: 300px;
+	}
+}
